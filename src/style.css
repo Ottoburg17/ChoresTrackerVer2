@@ -172,6 +172,7 @@ footer{
 
 #signupWindow{
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -181,6 +182,22 @@ footer{
     height: 100%;
     background-color: #E0DFDD;
     opacity: 1;
+}
+#signupWindowdiv{
+    height: 50%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 1;
+}
+#xBtn, #xBtn2{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 
@@ -440,4 +457,33 @@ input[type="button"]{
     padding: 10px 0;
     cursor: pointer;
     font-size: 18px;
+}
+
+/*
+   Ezzel formázzuk a Tiket Listát.
+*/
+
+#divHead{
+    display: flex;
+    align-items: space-between;
+    border: 1px solid red;
+    width: 80vh;
+}
+
+#ticketBox{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid magenta;
+    height: 80vh;
+}
+
+#divHead>h1{
+    padding-right: 80%;
+    
+}
+
+#divHead>button{
+
 }
